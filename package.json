@@ -1,0 +1,9 @@
+{
+  "name": "test01",
+  "version": "0.0.1",
+  "dependencies": {
+    "google-closure-compiler": "^20170124.0.0",
+    "grunt": "^1.0.1",
+    "grunt-zip": "^0.17.1"
+  }
+}

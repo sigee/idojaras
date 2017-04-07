@@ -1,8 +1,9 @@
 var idojaras_regio = idojaras_get_config('pref-idojaras-regio');
+var idojaras_http_request = false;
 
 function idojaras_change_config(idojaras_variable, idojaras_value) {
     var temp = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-    branch = temp.getBranch("extensions.idojaras.");
+    var branch = temp.getBranch("extensions.idojaras.");
     branch.setCharPref(idojaras_variable, idojaras_value);
     idojaras_init()
 }
@@ -13,13 +14,13 @@ function idojaras_change_config2(idojaras_variable){
 
 function idojaras_get_config(idojaras_variable) {
     var temp = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-    branch = temp.getBranch("extensions.idojaras.");
+    var branch = temp.getBranch("extensions.idojaras.");
     return branch.getCharPref(idojaras_variable)
 }
 
 function idojaras_save_config() {
     var temp = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-    branch = temp.getBranch("extensions.idojaras.");
+    var branch = temp.getBranch("extensions.idojaras.");
     branch.setCharPref('pref-idojaras-regio', idojaras_regio)
 }
 
@@ -29,7 +30,6 @@ function idojaras_init() {
 }
 
 function idojaras_rss_keres() {
-    idojaras_http_request = false;
     idojaras_http_request = new XMLHttpRequest();
     if (idojaras_http_request.overrideMimeType) {
         idojaras_http_request.overrideMimeType('text/xml')

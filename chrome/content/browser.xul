@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="chrome://idojaras/skin/skin.css" type="text/css"?>
 <overlay id="idojaras-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-<script type="application/x-javascript" src="chrome://idojaras/content/all.js" />
+<script type="application/x-javascript" src="chrome://idojaras/content/all.min.js" />
 
   <statusbar >
     <toolbarbutton id="idojaras-status-bar-regio" type="menu">

@@ -1,0 +1,9 @@
+content     idojaras    chrome/content/
+content     idojaras    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://idojaras/content/browser.xul
+
+locale      idojaras    en-US           locale/en-US/
+locale      idojaras    hu-HU           locale/hu-HU/
+
+skin        idojaras    classic/1.0     skin/
+style chrome://global/content/customizeToolbar.xul chrome://idojaras/skin/skin.css

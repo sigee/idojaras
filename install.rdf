@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>idojaras@by.sigee</em:id>
+    <em:name>Időjárás</em:name>
+    <em:version>1.0.8.1-signed.1-signed</em:version>
+    <em:description>Aktuális időjárás megjelenítése a státusz báron.</em:description>
+    <em:iconURL>chrome://idojaras/skin/logo.gif</em:iconURL>
+    <em:creator>Szigecsán Dávid (Sigee)</em:creator>
+    <em:homepageURL>http://www.sigee.uw.hu/referencia/index.php</em:homepageURL>
+    <em:aboutURL>chrome://idojaras/content/about.xul</em:aboutURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>3.7a1pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

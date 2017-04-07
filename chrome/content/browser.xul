@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="chrome://idojaras/skin/skin.css" type="text/css"?>
+<overlay id="idojaras-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://idojaras/content/all.js" />
+
+  <statusbar >
+    <toolbarbutton id="idojaras-status-bar-regio" type="menu">
+    <label id="idojaras-status-bar-regio-label" value="Régio" />
+      <panel>
+        <label value='Beállítások' style='font-weight:bold; font-size:x-large;' />
+        <hbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "1");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/1.png" />
+            </hbox>
+            <hbox>
+              <label value="Közép-Magyarország" />
+            </hbox>
+          </vbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "2");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/2.png" />
+            </hbox>
+            <hbox>
+              <label value="Északnyugat-Magyarország" />
+            </hbox>
+          </vbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "3");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/3.png" />
+            </hbox>
+            <hbox>
+              <label value="Északkelet-Magyarország" />
+            </hbox>
+          </vbox>
+        </hbox>
+        <hbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "4");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/4.png" />
+            </hbox>
+            <hbox>
+              <label value="Délnyugat-Magyarország" />
+            </hbox>
+          </vbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "5");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/5.png" />
+            </hbox>
+            <hbox>
+              <label value="Délkelet-Magyarország" />
+            </hbox>
+          </vbox>
+          <vbox onclick='idojaras_change_config("pref-idojaras-regio", "6");' align='center' style='border: 1px solid black;' >
+            <hbox>
+              <image src="chrome://idojaras/skin/regiok/6.png" />
+            </hbox>
+            <hbox>
+              <label value="Balaton" />
+            </hbox>
+          </vbox>
+        </hbox>
+      </panel>
+    </toolbarbutton>
+
+    <statusbarpanel id="idojaras-status-bar-homerseklet" label="?.? ºC" tooltiptext="Jelenlegi hőmérséklet: ?.? °C" />
+
+    <statusbarpanel id="idojaras-status-bar-icon-szelirany" tooltiptext="É/ÉK-i" >
+      <image id='idojaras-status-bar-icon-szelirany-image' src="chrome://idojaras/skin/szelirany/eek.png" style='width:20px; height:20px;' />
+      <label id='idojaras-status-bar-icon-szelirany-label' value="0 kmph" />
+    </statusbarpanel>
+
+<!-- Eddig kész -->
+
+    <statusbarpanel id="idojaras-status-bar-icon-idokep">
+      <image id='idojaras-status-bar-icon-idokep-image' src="chrome://idojaras/skin/idokep/eso.png" style='width:20px; height:20px;' tooltiptext="Eső" />
+    </statusbarpanel>
+
+    <statusbarpanel id="idojaras-status-bar-min" tooltiptext="Napi minimum hőmérséklet: ?.? °C" >
+      <image src="chrome://idojaras/skin/hold.gif" style='width:16px; height:16px;' />
+      <label id="idojaras-status-bar-min-label" value="?.? °C" />
+    </statusbarpanel>
+
+    <statusbarpanel id="idojaras-status-bar-max" tooltiptext="Napi maximum hőmérséklet: ?.? °C" >
+      <image src="chrome://idojaras/skin/nap.gif" style='width:16px; height:16px;' />
+      <label id="idojaras-status-bar-max-label" value="?.? °C" />
+    </statusbarpanel>
+
+    <statusbarpanel id="idojaras-status-bar-csapadek" tooltiptext="Napi csapadékmennyiség: ? mm" >
+      <label id="idojaras-status-bar-csapadek-label" value="? mm" />
+    </statusbarpanel>
+  </statusbar>
+
+</overlay>

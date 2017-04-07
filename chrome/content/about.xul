@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<dialog
+  onload="sizeToContent(); centerWindowOnScreen();"
+  title="Státusz - Időjárás"
+  orient="vertical"
+  autostretch="always"
+  buttons="accept"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <groupbox align="center" orient="horizontal">
+    <vbox>
+      <hbox>
+        <text value="Státusz - Időjárás" style="font-weight: bold; font-size: x-large;" />
+      </hbox>
+      <hbox>
+        <text value="Verzió: " />
+        <text value="1.0.8" />
+      </hbox>
+      <separator class="thin" />
+      <hbox>
+        <text value="Készítette: " style="font-weight: bold;" />
+        <text value="Szigecsán Dávid (Sigee)" />
+      </hbox>
+      <hbox>
+        <text value="Weblap: " style="font-weight: bold;" />
+        <text value="http://sigee.uw.hu/referencia/index.php" onclick="window.open('http://sigee.uw.hu/referencia/index.php'); window.close();" />
+      </hbox>
+      <separator class="thin" />
+      <hbox>
+        <text value="A kiegészítő a " style="font-weight: bold;" />
+        <text value="http://www.koponyeg.hu/index.php" onclick="window.open('http://www.koponyeg.hu/index.php'); window.close();" />
+        <text value=" adatait használja." style="font-weight: bold;" />
+      </hbox>
+    </vbox>
+  </groupbox>
+</dialog>
